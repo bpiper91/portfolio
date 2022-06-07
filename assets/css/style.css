@@ -1,17 +1,56 @@
-:root {
-    --primary-color: #115e70;
-    --secondary-color: #bb882c;
-    --tertiary-color: #a42828;
-    --quaternary-color: #3d8091;
+  :root {
+      --primary-color: #115e70;
+      --secondary-color: #bb882c;
+      --tertiary-color: #a42828;
+      --quaternary-color: #3d8091;
+      --quinary-color: #f2f2f2;
   }
-  
+
   * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
   }
-  
+
   body {
-    color: #1e1e1e;
-    font-family: Helvetica, Arial, sans-serif;
+      color: #1e1e1e;
+      font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* BEGIN HEADER STYLING */
+  header {
+      padding: 20px 35px;
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+  }
+
+  header h1 {
+      font-size: 36px;
+      padding: 0 10px;
+  }
+
+  header a {
+      text-decoration: none;
+      color: var(--quinary-color);
+  }
+
+  header nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 24px;
+      height: 100%;
+  }
+
+  header nav ul li a {
+      padding: 10px 25px;
+      font-weight: lighter;
   }
