@@ -86,7 +86,7 @@
   }
 
   section h3 {
-      font-size:24px;
+      font-size:20px;
   }
 
   .about .section-title, .work .section-title, .contact .section-title {
@@ -114,6 +114,7 @@
 
   .section-contacts {
       padding: 30px 60px;
+      padding-right: 10%;
       flex: 1 80%;
   }
 
@@ -139,7 +140,44 @@
 
   .work {
       background-color: var(--tertiary-color);
-    }
+  }
+
+  .section-projects {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      padding: 30px 60px;
+      padding-right: 10%;
+  }
+
+  .section-projects article {
+      flex: 1 45%;
+      margin: 20px 0;
+      height: 200px;
+      background-color: black;
+      position: relative;
+  }
+
+  .section-projects h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+  }
+
+  .section-projects article:nth-child(odd) {
+      margin-left: 40px;
+  }
+
+  .section-projects article:nth-child(even) {
+      margin-right: 40px;
+  }
+
+  .section-projects article:first-child {
+    flex: 1 90%;
+    margin: 0 0 20px 0;
+    height: 400px;
+}
 
   .contact {
       background-color: var(--quaternary-color);
