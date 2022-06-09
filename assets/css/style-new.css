@@ -111,18 +111,81 @@ section {
     padding: 40px 10% 40px 60px;
 }
 
+/* This styling is unique to the About Me section */
+
 .about-img {
     flex: 1 25%;
-    max-width: 30%
+    overflow: hidden;
 }
 
 .about-img img {
+    width: 100%;
     object-fit: cover;
-    overflow: hidden;
 }
 
 .about-info {
     flex: 1 70%;
+    padding: 30px 60px;
+}
+
+/* This styling is unique to the My Work section */
+
+.projects {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects article {
+    flex: 1 40%;
+    max-width: 45%;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--quinary-color);
+    background-color: rgba(164, 40, 40, 0.8);
+    padding: 6px 16px;
+    width: 100%;
+}
+
+.projects article:nth-child(odd) {
+    margin-left: 2.5%;
+}
+
+.projects article:nth-child(even) {
+    margin-right: 2.5%;
+}
+
+/* This styling is unique to the Contact Me section */
+
+.contact-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    width: 100%;
+}
+
+.contact-links ul h3 {
+    font-size: 23px;
+}
+
+.contact-links ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 25px;
 }
 
 /* BEGIN UTILITY STYLES */
