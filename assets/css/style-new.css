@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #115e70;
+    --secondary-color: #bb882c;
+    --tertiary-color: #a42828;
+    --quaternary-color: #3d8091;
+    --quinary-color: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #042a38;
+}
+
+p:not(:first-child) {
+    margin: 0.5em 0;
+}
+
+/* BEGIN HEADER STYLING */
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-size: 36px;
+    padding: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--quinary-color);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    height: 100%;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 25px;
+    font-weight: lighter;
+}
+/* END HEADER STYLING */
+
+/* BEGIN FOOTER STYLING */
+footer {
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+footer p {
+    text-align: center
+}
+/* END FOOTER STYLING */
+
+/* BEGIN SECTION STYLING */
+section {
+    display: flex;
+    width: 100%;
+}
+
+.about {
+    background-color: var(--secondary-color);
+}
+
+.work {
+    background-color: var(--tertiary-color);
+}
+
+.contact {
+    background-color: var(--quaternary-color);
+}
+
+.section-title {
+    color: var(--quinary-color);
+    flex: 0 17%;
+    padding: 60px 40px;
+    text-align: right;
+}
+
+.section-title h2 {
+    font-size: 28px;
+}
+
+.section-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    flex: 1 83%;
+    display: flex;
+    padding: 40px 10% 40px 60px;
+}
+
+.about-img {
+    flex: 1 25%;
+    max-width: 30%
+}
+
+.about-img img {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.about-info {
+    flex: 1 70%;
+}
+
+/* BEGIN UTILITY STYLES */
+.insert-break::before {
+    content: "\a";
+    white-space: pre;
+}
+/* END UTILITY STYLES */
