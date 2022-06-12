@@ -169,11 +169,6 @@
       position: relative;
   }
 
-  .section-projects img {
-      width: 100%;
-      object-fit: cover;
-  }
-
   .project-title {
       position: absolute;
       bottom: 0;
